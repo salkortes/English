@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reservations - Greenleaf Café</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="img/green_leaf.png" alt="Greenleaf Café Logo" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="orders.html">Order</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Book a Table</h1>
+    <img src="img/reservations.jpeg" alt="Reservations" class="wide-img" />
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required />
+
+      <label for="time">Time:</label>
+      <input type="time" id="time" name="time" required />
+
+      <label for="guests">Guests:</label>
+      <input type="number" id="guests" name="guests" min="1" max="10" required />
+
+      <input type="submit" value="Send Reservation (Disabled)" disabled />
+    </form>
+    <p class="note">* This form is not connected to a backend. Demo only.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Greenleaf Café. All rights reserved.</p>
+  </footer>
+</body>
+</html>
